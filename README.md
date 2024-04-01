@@ -52,15 +52,17 @@ Navigate to the project directory:
 - Separating features and target variable.
 - Addressing class imbalance using SMOTE.
 
-### Feature Selection
-
-- Using Random Forest Classifier for feature selection.
-- Selecting important features based on model weights.
-
 ### Splitting Dataset
 
 - Splitting data into training, validation, and testing sets.
 - Maintaining data integrity and reproducibility.
+
+### Model Selection
+
+- Several machine learning models are trained and evaluated on the validation data to select the best-performing model for the task.
+- Models trained include Logistic Regression, K-Nearest Neighbors (KNN), Gaussian Naive Bayes (GaussianNB), Decision Trees, Random Forest XGBoost, and Gradient Boosting Classifier.
+- Each model's performance is evaluated using accuracy, precision, recall, and F1-score on the validation data.
+- The XGBoost classifier is selected as the best-performing model based on its high accuracy, precision, recall, and F1-score on the validation data.
 
 ### Model Training & Evaluation
 
